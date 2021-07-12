@@ -33,7 +33,7 @@ img {
 	width: 100px;
 }
 
-#start {
+#start, #hint {
 	text-transform: uppercase;
 	background-color: darkolivegreen;
 	background: linear-gradient(to right, #77eada 0%, #1b657b 100%);
