@@ -1,0 +1,51 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	margin: 10px;
+	padding: 10px;
+	/*position: relative;*/
+}
+
+h1 {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 3.5vw;
+	background: linear-gradient(to right, #77eada 0%, #1b657b 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+img {
+	display: none;
+	height: 100px;
+}
+
+#toogle {
+	opacity: 0;
+	border: none;
+	display: none;
+	background-color: white;
+	height: 30px;
+	width: 100px;
+}
+
+#start {
+	text-transform: uppercase;
+	background-color: darkolivegreen;
+	background: linear-gradient(to right, #77eada 0%, #1b657b 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	border: 0.1px solid darkred;
+	padding: 0.5vw 1vw;
+	border-radius: 0.7vw;
+	font-size: 2.5vw;
+	border-color: darkolivegreen;
+}
+
+#container {
+	position: absolute;
+}
