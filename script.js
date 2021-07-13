@@ -4,6 +4,10 @@ var alert1; var alert2;
 var hint = false;
 var found = false;
 
+function alrt() {
+	alert("Our beloved teacher PK Dan is hidden somehwere on this page.\nCan you find him by clicking on screen?\n\n (Use dektop for better experience)");
+}
+
 document.addEventListener("click", printMousePos);
 
 function printMousePos(event) {
@@ -29,7 +33,7 @@ function printMousePos(event) {
 	}
 
 	if (found){
-		document.getElementById('head').innerHTML="You've found it!";
+		document.getElementById('head').innerHTML="You've found him!";
 	}
 
 	if(hint == true && found == false){
@@ -41,7 +45,7 @@ function start(){
 	window.t = Math.floor(Math.random() * 100);
 	window.l = Math.floor(Math.random() * 100);
 	document.getElementById('start').innerHTML="Reset";
-	document.getElementById('toogle').style.display="block";
+	document.getElementById('toggle').style.display="block";
 	document.getElementById('container').style.top=t+"%";
 	document.getElementById('container').style.left=l+"%";
 }
@@ -49,7 +53,7 @@ function start(){
 function greet() {
 
 	document.getElementById('src_img').style.display = "block";
-	document.getElementById('head').innerHTML="You've found it!";
+	document.getElementById('head').innerHTML="You've found him!";
 	found = true;
 }
 
@@ -62,6 +66,6 @@ function toggle_hint() {
 	else{
 		hint = false;
 		document.getElementById('hint').innerHTML="Hint off";
-		document.getElementById('head').innerHTML="Find the cow";
+		document.getElementById('head').innerHTML="Find PK Dan";
 	}
 }
